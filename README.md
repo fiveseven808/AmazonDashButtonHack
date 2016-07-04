@@ -6,7 +6,7 @@ Amazon Dash Button Hack
 ### Summary: Updated 7/3/2016
 Use your Amazon Dash buttons to perform any action! Setup a server and execute any program or script when a button is pushed! Now supports up to 253 buttons!   
 
-###### If you're lazy and just want things to "work" a basic wifi based geofencing version is available at [\Prod\Package\Prod 2016_0702.7z](https://github.com/fiveseven808/AutoHueServer/raw/master/Prod/Package/Prod%202016_0702.7z)  
+###### Download the latest version [here!](https://github.com/fiveseven808/AmazonDashButtonHack/raw/master/prod/AmazonButton_Discovery_160702_2233.zip)  
 
 
 **Instructions as of 7/3/2016**  
