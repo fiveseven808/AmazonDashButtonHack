@@ -36,3 +36,9 @@ Use your Amazon Dash buttons to perform any action! Setup a server and execute a
   * Automatic "Amazon Button vs other Amazon device" distinguishing
   * Button "Manager" GUI 
   * Hover over tray icon to determine button
+
+**License:** 
+
+[Creative Commons Attribution-NonCommercial 4.0 International ](https://creativecommons.org/licenses/by-nc/4.0/)  
+
+Obviously the creator of this software can't and won't be held responsible for any sort of "issues" or "problems" that may arise through use of or viewing of any files related to this project. 
