@@ -12,7 +12,8 @@ Use your Amazon Dash buttons to perform any action! Setup a server and execute a
 **Instructions as of 7/3/2016**  
 **Requirements:**
 
-  * Amazon Dash Button connected to Wifi (follow instructions [here](http://www.instructables.com/id/Amazon-Dash-Button-Hack/))
+  * Amazon Dash Button connected to Wifi (follow instructions [here](http://www.instructables.com/id/Amazon-Dash-Button-Hack/))  
+    **Dash Button Model JK29LP is currently unsupported. Does not work reliably with program. JK76PL is fine though.**
   * Class C subnet  
     *(If you don't know what this is, don't worry about it)*
   * Preferably a reserved DHCP IP for the button  
