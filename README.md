@@ -10,7 +10,7 @@ Use your Amazon Dash buttons to perform any action! Setup a server and execute a
 (7/11/2016) Updated supported devices  
 
 
-###### Download the latest version [here!](https://github.com/fiveseven808/AmazonDashButtonHack/raw/master/prod/AmazonButton_Discovery_160702_2233.zip)  
+###### Download the latest version [here!](https://github.com/fiveseven808/AmazonDashButtonHack/releases/download/160711/AmazonButton_Discovery_160711_1114.zip)  
 
 
 **Instructions as of 7/11/2016**  
