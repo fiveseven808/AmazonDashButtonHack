@@ -5,9 +5,13 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance Off
 PingResults:="PingResults.txt"
 PingYas:="bytes=32"
+debug = yes
 
 /*
 Changelog: 
+7/11/16
+	- integrating tping to compensate for the newer amazon buttons and testing 
+	- tping doesn't seem to work, i get some weird invalid parameter as the IP address... 
 2016/6/16
 	- at some point I found a way to use an onexit command this alllows the user to add a comment that is viewable upon closing
 	- added button IP to the pingresult text file so this program can be run at the same time i nthe same directory
@@ -24,11 +28,14 @@ OnExit, ExitSub
 Main:
 {
 FileDelete,%PingResults%
+if debug = yes
+	goto presetstart
 If 0 > 0
 	{
 	Computername = %1%
 	PingResults:="PingResults" . Computername . ".txt"
 	Comment = %3%
+	ptorun = %2%
 	Goto Checkcomp
 	}
 else
@@ -39,10 +46,17 @@ else
 }
 Return
 
+presetstart:
+	Computername = 192.168.1.229
+	ptorun = msgbox.ahk
+	PingResults:="PingResults" . Computername . ".txt"
+	Comment = debug comment
+Goto Checkcomp
+
 Checkcomp:
 	gosub CheckCompison
-	run %2%
-	ToolTip, Button at %1%`nhas been pushed.
+	run %ptorun%
+	ToolTip, Button at %Computername%`nhas been pushed.
 	SetTimer, RemoveToolTip, 2000
 	gosub CheckCompisbackoff
 goto Checkcomp
@@ -51,7 +65,9 @@ goto Checkcomp
 CheckCompison:
 Loop
 {
-PingCmd:="ping " . ComputerName . " -n 2 >" . PingResults
+;PingCmd:="tping -d 10 " . ComputerName . " >" . PingResults
+PingCmd:="ping -w 1 -n 3 " . ComputerName . " >" . PingResults
+;msgbox %PingCmd%
 RunWait %comspec% /c """%PingCmd%""",,Hide
 Loop
 	{
@@ -64,7 +80,8 @@ Loop
 		PingError:=true
 		break
 		}
-	}			
+	}		
+;runwait %PingResults%	
 ;FileDelete,%PingResults%
 If PingError = 1
 	{
@@ -96,7 +113,7 @@ CheckCompisbackoff:
 	If PingError = 0
 		{
 		;msgbox, button disappeared!
-		ToolTip, Button at %1%`nhas disappeared.
+		ToolTip, Button at %Computername%`nhas disappeared.
 		SetTimer, RemoveToolTip, 2000
 		break
 		}
@@ -117,6 +134,6 @@ if A_ExitReason not in Logoff,Shutdown  ; Avoid spaces around the comma in this 
 }
 sleep 3000
 FileDelete, %PingResults%
-if ErrorLevel   ; i.e. it's not blank or zero.
-    MsgBox, ummm... error says %ErrorLevel%
+;if ErrorLevel   ; i.e. it's not blank or zero.
+;    MsgBox, ummm... error says %ErrorLevel%
 ExitApp

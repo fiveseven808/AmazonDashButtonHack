@@ -3,17 +3,20 @@ Amazon Dash Button Hack
 ## Dash Button Discovery App and Server Daemon 
 
 
-### Summary: Updated 7/3/2016
-Use your Amazon Dash buttons to perform any action! Setup a server and execute any program or script when a button is pushed! Now supports up to 253 buttons!   
+### Summary: Updated 7/11/2016
+Use your Amazon Dash buttons to perform any action! Setup a server and execute any program or script when a button is pushed!  
+(7/2/2016) Now supports up to 253 buttons!  
+(7/11/2016) New JK29LP button seems to work reliably too!  
+(7/11/2016) Updated supported devices  
+
 
 ###### Download the latest version [here!](https://github.com/fiveseven808/AmazonDashButtonHack/raw/master/prod/AmazonButton_Discovery_160702_2233.zip)  
 
 
-**Instructions as of 7/3/2016**  
+**Instructions as of 7/11/2016**  
 **Requirements:**
 
   * Amazon Dash Button connected to Wifi (follow instructions [here](http://www.instructables.com/id/Amazon-Dash-Button-Hack/))  
-    **Dash Button Model JK29LP is currently unsupported. Does not work reliably with program. JK76PL is fine though.**
   * Class C subnet  
     *(If you don't know what this is, don't worry about it)*
   * Preferably a reserved DHCP IP for the button  
@@ -21,10 +24,10 @@ Use your Amazon Dash buttons to perform any action! Setup a server and execute a
 	
 **Instructions:**
 
-  1. Double click "AmazonButton_Discovery_160702_2233.exe" to start scanning for buttons
+  1. Double click "AmazonButton_Discovery_160711_1114.exe" to start scanning for buttons
   2. Click "OK" at the prompt
   3. Start pushing the button you wish to pair repeatedly. Keep the LED "White!"
-  4. If no Amazon Devices are found, try again, but start pushing the button as soon as you double click on the EXE a
+  4. If no Amazon Devices are found, try again, but start pushing the button as soon as you double click on the EXE
   5. If more than one Amazon Devices are found, You'll have to go and figure out what IP corresponds with your button on your own. I have not automated this process yet. Disconnect and power off your other Amazon devices if you wish to use this program easily (i.e. Echo, Dash, Fire TV, Fire Tablet, etc) 
   6. Pick a program you wish to run when the Button is pushed
   7. Enter a comment for the daemon, this will identify the particular daemon corresponding with the particular button. Comment ex. "Elements button toggling Porch Lights" 

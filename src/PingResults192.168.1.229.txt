@@ -1,0 +1,10 @@
+
+Pinging 192.168.1.229 with 32 bytes of data:
+Request timed out.
+Reply from 192.168.1.229: bytes=32 time=116ms TTL=126
+Reply from 192.168.1.229: bytes=32 time=68ms TTL=126
+
+Ping statistics for 192.168.1.229:
+    Packets: Sent = 3, Received = 2, Lost = 1 (33% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 68ms, Maximum = 116ms, Average = 92ms
