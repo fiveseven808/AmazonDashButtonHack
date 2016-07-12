@@ -1,9 +1,10 @@
 Amazon Dash Button Hack 
-=============
+=======================
 ## Dash Button Discovery App and Server Daemon 
 
 
 ### Summary: Updated 7/11/2016
+------------------------------
 Use your Amazon Dash buttons to perform any action! Setup a server and execute any program or script when a button is pushed!  
 (7/2/2016) Now supports up to 253 buttons!  
 (7/11/2016) New JK29LP button seems to work reliably too!  
@@ -14,7 +15,7 @@ Use your Amazon Dash buttons to perform any action! Setup a server and execute a
 
 
 **Instructions as of 7/11/2016**  
-**Requirements:**
+**Requirements:**  
 
   * Amazon Dash Button connected to Wifi (follow instructions [here](http://www.instructables.com/id/Amazon-Dash-Button-Hack/))  
   * Class C subnet  
@@ -32,8 +33,7 @@ Use your Amazon Dash buttons to perform any action! Setup a server and execute a
   6. Pick a program you wish to run when the Button is pushed
   7. Enter a comment for the daemon, this will identify the particular daemon corresponding with the particular button. Comment ex. "Elements button toggling Porch Lights" 
   8. Finish! Repeat as necessary for any other buttons. 
-		
-		  	 
+  				  	 
 **Wishlist:** *(To be implemented)*
 
   * Batch file creation to allow followup button usage (if Reserved IPs) without having to run through the Discovery program
@@ -46,3 +46,9 @@ Use your Amazon Dash buttons to perform any action! Setup a server and execute a
 [Creative Commons Attribution-NonCommercial 4.0 International ](https://creativecommons.org/licenses/by-nc/4.0/)  
 
 Obviously the creator of this software can't and won't be held responsible for any sort of "issues" or "problems" that may arise through use of or viewing of any files related to this project. 
+
+**Donations:**
+
+If this project has been useful to you, I'd appreciate it if you would buy me a drink! :D 
+
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7V4SEHWVDNQL6)
