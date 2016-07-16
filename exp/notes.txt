@@ -1,0 +1,39 @@
+amazon dash switch for philips hue
+goals
+	- simple interface. i..e double click on exe,
+	- check if winhue exists. if not, provide a link or offer to open up url and download link or cancel
+		- if winhue exists, run a whc -ll and -lg command to pull lights and groups 
+	- main menu
+		- click on find new button or use existing ip if known
+			- if existing ip, run a test to make sure it's still the same ip
+				if it doesn't seem to get discovered, retry or start discovery
+			- if new, use the discovery protocol to find a new button and get ip
+				- if not button discovered ask if want to retry or cancel
+				- if button discovered, ask if you want to view ip and mac to do dhcp reservation or cancel
+					- if button dhcp reserved, ask if you want to save for future quick reassignemnt via ip
+		- from button IP either entered or discovered
+			- present options
+			- toggle a single lights
+				- select light to toggle from dropdown
+				- ask if you want to toggle from current state or normal 60w incandescent\
+			- toggle a groups
+			- (WIP) toggle a generated room scene
+				- does the scene exists? yes no cancel
+				- if yes, locate file
+				- if no, do you want to create? yes no cancel
+					-if yes, go and set the lights in the house the way you want
+					- select the lights from all lights avaliable that you want part of the scene
+					- generate the scene based on the numbers selected
+					- ask for the save name
+					- save the file
+					- ask if you want to link it to the button now? yes no 
+					- if yes, start up dash daemon with the toggle		
+			- (WIP) toggle a generated whole house scene
+			- custom? 
+				- tell them to raise an issue on git, aand or email the developer with their idea on what they would like to do! 
+			
+			
+			
+			
+use this readme as an example to build my new readme
+https://github.com/ctodobom/OpenNoteScanner/blob/master/README.md
