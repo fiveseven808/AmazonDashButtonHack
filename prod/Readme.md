@@ -1,19 +1,19 @@
 Amazon Dash Button Hack 
 =======================
-### Dash Button Discovery App and Server Daemon 160715 v4.0
+### Dash Button Discovery App and Server Daemon v4.1
 
 
 ### Summary: 
 ------------
 Updated components for specific versions can be found on the release page of the gitrepo
-[https://github.com/fiveseven808/AmazonDashButtonHack/releases/tag/160715](https://github.com/fiveseven808/AmazonDashButtonHack/releases/tag/160715)
+[https://github.com/fiveseven808/AmazonDashButtonHack/releases/tag/170316](https://github.com/fiveseven808/AmazonDashButtonHack/releases/tag/170316)
 
 
-### Download the latest version [here!](https://github.com/fiveseven808/AmazonDashButtonHack/releases/download/160715/AmazonButton_Discovery_160715_2304.zip)  
+### Download the latest version [here!](https://github.com/fiveseven808/AmazonDashButtonHack/releases/download/170316/AmazonButton_Discovery_170316.zip)  
 
 
 -----------------------------------------------------
-**Instructions as of 7/16/2016**  
+**Instructions as of 3/16/2017**  
 **Requirements:**  
 
   * Amazon Dash Button connected to Wifi (follow instructions [here](http://www.instructables.com/id/Amazon-Dash-Button-Hack/))  
@@ -25,28 +25,30 @@ Updated components for specific versions can be found on the release page of the
 	
 **Normal Usage Instructions:**
 
-  1. Double click "AmazonButton_Discovery_160715_\****.exe" to start scanning for buttons
+  1. Double click "AmazonButton_Discovery.exe" to start scanning for buttons
   2. Click "OK" at the prompt
   3. Start pushing the button you wish to pair repeatedly. Keep the LED "White!"
   4. If no Amazon Devices are found, try again, but start pushing the button as soon as you double click on the EXE
   5. If more than one Amazon Devices are found, You'll have to go and figure out what IP corresponds with your button on your own. I have not automated this process yet. Disconnect and power off your other Amazon devices if you wish to use this program easily (i.e. Echo, Dash, Fire TV, Fire Tablet, etc) 
   6. Pick a program you wish to run when the Button is pushed
   7. Enter a comment for the daemon, this will identify the particular daemon corresponding with the particular button. Comment ex. "Elements button toggling Porch Lights" 
-  8. Finished! Repeat as necessary for any other buttons. 
+  8. If you do not wish to have the tooltip appear near your mouse every time a button is pushed, choose your option
+  9. Finished! Repeat as necessary for any other buttons. 
 
 
 **If you already know the IP of your button:**
 
-  1. Double click *AmazonButton_v4.0.exe*
+  1. Double click *AmazonButton_Server.exe*
   2. Enter the known/reserved IP of your Dash button 
   3. Pick a program you wish to run when the Button is pushed
   4. Enter a comment for the daemon, this will identify the particular daemon corresponding with the particular button. Comment ex. "Elements button toggling Porch Lights" 
-  5. Finished! Repeat as necessary for any other buttons. 
+  5. If you do not wish to have the tooltip appear near your mouse every time a button is pushed, choose your option
+  6. Finished! Repeat as necessary for any other buttons. 
 
 
 **Command Line Arguments:**
 
-  1. *AmazonButton_v4.0.exe* [Button IP] [Program to Launch] "[Optional Comment]" 
+  1. *AmazonButton_Server.exe* [Button IP] [Program to Launch] "[Optional Comment]" [/s]
   2. Repeat as necessary for any other buttons. 
 
 -----------------------------------------------------
