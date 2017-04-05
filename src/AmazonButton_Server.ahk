@@ -20,6 +20,8 @@ Button IP Goes here
 
 /*
 Changelog: 
+v4.1b 
+	+ Bug fix. Silence switch now silences when the button disappears. (untested)
 v4.1a
 	+ New version! 
 	+ Added the ability to silence tooltip notifications
@@ -163,9 +165,12 @@ CheckCompisbackoff:
 	;FileDelete,%PingResults%
 	If PingError = 0
 		{
-		;msgbox, button disappeared!
-		ToolTip, Button at %Computername%`nhas disappeared.
-		SetTimer, RemoveToolTip, 2000
+		If (silence_switch=0)
+			{
+			;msgbox, button disappeared!
+			ToolTip, Button at %Computername%`nhas disappeared.
+			SetTimer, RemoveToolTip, 2000
+			}
 		break
 		}
 	}
